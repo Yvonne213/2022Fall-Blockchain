@@ -9,22 +9,39 @@ contract IsArt {
 
 
   function voteYes() public {
-      yesVotes++;
+    yesVotes++;
+
+    if(yesVotes < noVotes) {
+        isArt = false;
+    } else {
+        isArt = true;
+    }
   }
 
   function voteNo() public {
-      noVotes++;
+    noVotes++;
+
+    if(yesVotes < noVotes) {
+        isArt = false;
+    } else {
+        isArt = true;
+    }
   }
 
-  function getStatus() public returns (bool) {
-    
-    require(yesVotes != noVotes, "This contract's status as art is currently disputed. Please vote yes or no.");
+  function viewVotes() public view returns (uint256, uint256) {
+      return (yesVotes, noVotes);
+  }
 
-    if(yesVotes > noVotes) {
-        isArt = true;
-    } else {
-        isArt = false;
-    }
+  function viewStatus() public view returns (bool) {
+    
+    // note: if the vote is tied, then the contract is considered art,
+    // because anything provocative enough to cause such a split in
+    // public opinion must surely be considered art
+    //
+    // note: the above note is a conceptual way to account for the fact
+    // that a boolean can only store 'true' or 'false'. If you want
+    // a variable to hold the possibility of a 3rd value, consider
+    // using a uint8, where 0 = false, 1 = true, and 2 = tie;
 
     return isArt;
   }
