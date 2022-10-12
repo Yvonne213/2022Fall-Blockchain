@@ -27,3 +27,7 @@ input{
   width: 500px;
   height: 500px;
 }
+input[type=text] :focus{
+  border: 5px solid red;
+  border-radius: 1000px;
+}
