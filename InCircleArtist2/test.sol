@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract ArtistToken is ERC721, Ownable {
-     address public user;
+    address public user;
     string public realname;
     // string public addr;
     string public autoname = "Anonymous artist"; 
