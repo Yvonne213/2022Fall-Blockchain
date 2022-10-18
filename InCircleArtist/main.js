@@ -93,6 +93,10 @@ function setInfo() {
   const addressToSet = $('#setAddressInput').val();
 
   // pass the converted number to the contract
-  contractWithSigner.nameInput(addressToSet, nameToSet);
+  if(addressToSet.length == 0) {
+    alert("Please enter an address")
+  } else {
+    contractWithSigner.nameInput(addressToSet, nameToSet);
+  }
 }
 

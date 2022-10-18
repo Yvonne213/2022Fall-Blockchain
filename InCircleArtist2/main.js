@@ -89,10 +89,19 @@ async function getUserInfo() {
 
 function setInfo() {
   // grab the user input from the input text box
+  
+ 
+
   const nameToSet = $('#setArtistInput').val();
   const addressToSet = $('#setAddressInput').val();
 
+  if(addressToSet.length == 0) {
+    alert("Please enter an address")
+  } else {
+    contractWithSigner.nameInput(addressToSet, nameToSet);
+  }
+
   // pass the converted number to the contract
-  contractWithSigner.nameInput(addressToSet, nameToSet);
+  
 }
 
