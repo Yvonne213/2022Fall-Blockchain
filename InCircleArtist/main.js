@@ -92,11 +92,12 @@ function setInfo() {
   const nameToSet = $('#setArtistInput').val();
   const addressToSet = $('#setAddressInput').val();
 
-  // pass the converted number to the contract
+  // pass the converted number to the contract/ enter their name and address
   if(addressToSet.length == 0) {
     alert("Please enter an address")
   } else {
     contractWithSigner.nameInput(addressToSet, nameToSet);
   }
+
 }
 
