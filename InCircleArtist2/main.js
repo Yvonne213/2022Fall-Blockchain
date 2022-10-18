@@ -47,14 +47,40 @@ async function getUserInfo() {
 
   // iterate through currentName and currentAddress, concat all items
   var nameAndAddressArray = [];
+  var table = document.createElement("table");
+
+
+  var row = table.insertRow(0);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  cell1.innerHTML = String("Artist");
+  cell2.innerHTML = String("Address");
+
   for (var i=0; i < currentName.length ; i++) {
-    nameAndAddressArray += "<div class='list'>"+currentName[i] + "   " + currentAddress[i] + "   " +"</div>"
+
+    var row = table.insertRow(1);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    cell1.innerHTML = String(currentName[i]);
+    cell2.innerHTML = String(currentAddress[i]) ;
+
+
   }
+  document.getElementById("currentArtist").innerHTML = "";
+  document.getElementById("currentArtist").appendChild(table);
 
   // display the current nvvumber to your web page
   //$('#currentArtist').innerHTML = nameAndAddressArray
+
+  // var row = table.insertRow(0);
+  // var cell1 = row.insertCell(0);
+  // var cell2 = row.insertCell(1);
+  // cell1.innerHTML = "Artist";
+  // cell2.innerHTML = "Address";
+  // document.getElementById("currentArtist").appendChild(table);
+
   console.log(nameAndAddressArray)
-  document.getElementById("currentArtist").innerHTML = nameAndAddressArray
+  //document.getElementById("currentArtist").innerHTML = "<tr>"+"jjsjsjs"+"</tr>"
   // $('#currentAddress').text(currentAddress)
 }
 

@@ -11,7 +11,7 @@ body {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   padding: 1em;
 }
 
@@ -30,13 +30,16 @@ form{
 
 input{
   
-  font-size: 1rem;
- 
-  border-radius: 1px;
-  border: none;
-  border-bottom: 2px solid rgb(111, 111, 111);
+  font-size: 2rem;
+
+  border-radius: 1000px;
+
+  border: 1px dashed rgb(255, 0, 0);
   padding: 20px 20px;
-  margin: 20px 0;
-  width: 200px;
-  height: 10px;
+  margin: 00px 0;
+  width: 245px;
+  height: 245px;
+}
+input:focus {
+  border: 0.2px solid rgb(240, 240, 240);
 }

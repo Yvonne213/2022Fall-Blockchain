@@ -17,8 +17,8 @@
   <title>Yvonne's Dapp</title>
   <style>
     .a {
-      margin-top: 138px;
-        }
+      margin-top: -20px;
+    }
 
     div.b {
       line-height: 1000%;
@@ -28,39 +28,52 @@
       font-size: 1em;
     }
 
-    .font{
-      font-size: 5em;
+    .font {
+      font-size: 1.3em;
+    }
+
+    table {
+      width: 100%;
+      border: 1px solid;
     }
   </style>
 </head>
 
 <body>
+  
   <h1>Everyone can be an in-circle Artist</h1>
 
   <!-- This input element is the text box where users
   enter the number they want to set -->
-  <form>
+  <div class="font" style="margin-top: 1em;color:rgb(174, 0, 0)">
+    <label for="numInput">Enter Your Name and Address : </label>
+  </div>
+  <label for="numInput">*Top circle [Name]; Bottom circle [Wallet Address] </label>
 
-
+  <form style="margin:2em">
     <div class="a">
       <div>
-      <label for="numInput">Enter Your Name: </label>
-
-      <input type="text" name="setArtistInput" id="setArtistInput">
-    </div>
-    <div>
-      <label for="numInput">Enter Your Address: </label>
-
-      <input type="text" name="setAddressInput" id="setAddressInput">
-    </div>
+        <input type="text" name="setArtistInput" id="setArtistInput">
+      </div>
+      <div>
+        <input type="text" name="setAddressInput" id="setAddressInput">
+      </div>
     </div>
   </form>
 
   <button id="setArtistButton">Click and Enter Artists' Circle</button>
 
-  <div> <p class="font">Current Artist in Circle: <span id="currentArtist"></span></p>
+  <div style="width: 800px;">
+    <div class="font" style="margin: 30px;">Current Artist in Circle:
   </div>
-  <table></table>
+
+
+  <div id="currentArtist">
+  </div>
+
+
+
+
 
 
 </body>
