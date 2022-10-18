@@ -64,7 +64,6 @@ async function getUserInfo() {
     cell1.innerHTML = String(currentName[i]);
     cell2.innerHTML = String(currentAddress[i]) ;
 
-
   }
   document.getElementById("currentArtist").innerHTML = "";
   document.getElementById("currentArtist").appendChild(table);
