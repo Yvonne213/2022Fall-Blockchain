@@ -1,10 +1,7 @@
 connectButton.onclick = main;
 
 async function main() {
-  if(navigator.userAgent.indexOf("Safari") > -1) {
-    alert("Please switch to a browser that supports Web3 (Chrome, Firefox, Brave, Edge, or Opera)")
-    return;
-  }
+  
   if(!window.ethereum) {
     alert("No Web3 Provider detected, please install MetaMask (https://metamask.io)")
     return;
@@ -22,6 +19,8 @@ async function main() {
   const contract = new ethers.Contract(contractAddress, contractABI, provider);
   const contractWithSigner = contract.connect(signer);
 
+  alert("Connected")
+
   // if network changes, refresh the page
   provider.on("network", (newNetwork, oldNetwork) => {
     if (oldNetwork) {
@@ -31,15 +30,20 @@ async function main() {
 
   //-----------ADD YOUR CODE BELOW THIS LINE------------//
 
-
-
   // EVENT LISTENERS
   contract.on("MintEvent", (_tokenId, _text) => {
     textDisplay.textContent = _text;
   });
  
-  textInputButton.onclick = mint();
+  textInputButton.onclick = mint;
+  
+  tokenIdInputButton.onclick = checkURI;
 
+  async function checkURI() {
+    let tokenId = +tokenIdInput.value;
+    let uri = await contract.tokenURI(tokenId);
+    uriDisplay.textContent = uri;
+  }
 
   async function mint() {
     const newText = textInput.value;
