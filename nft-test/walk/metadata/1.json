@@ -1,0 +1,14 @@
+{
+    "name":"walk",
+    "description":"Random walk memory",
+    "image": "https://raw.githubusercontent.com/Yvonne213/2022Fall-Blockchain/main/nft-test/walk/image/randomwalk.gif",
+    "attributes": [ 
+         {
+        "display_type": "date", 
+        "trait_type": "Walkday", 
+        "value": 1546360800
+      } 
+]
+
+
+}
