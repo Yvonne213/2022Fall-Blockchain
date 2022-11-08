@@ -1,7 +1,7 @@
 {
     "name":"walk",
     "description":"Random walk memory",
-    "image": "https://raw.githubusercontent.com/Yvonne213/2022Fall-Blockchain/main/nft-test/walk/image/randomwalk.gif",
+    "image": "",
     "attributes": [ 
          {
         "display_type": "date", 
