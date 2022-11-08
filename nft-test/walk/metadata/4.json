@@ -1,7 +1,7 @@
 {
     "name":"walk",
     "description":"Random walk memory 3",
-    "image": "https://yvonne213.github.io/2022Fall-Blockchain/nft-test/walk/image/3.gif",
+    "image": "https://yvonne213.github.io/2022Fall-Blockchain/nft-test/walk/image/4.gif",
     "attributes": [ 
          {
         "display_type": "date", 
@@ -10,7 +10,7 @@
       },
       {
         "trait_type": "Time", 
-        "value": "2 hours"
+        "value": "1 hours"
       }, 
       {
         "trait_type": "walkway", 
