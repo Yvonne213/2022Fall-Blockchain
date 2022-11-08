@@ -1,0 +1,22 @@
+{
+    "name":"walk",
+    "description":"Random walk memory 3",
+    "image": "https://yvonne213.github.io/2022Fall-Blockchain/nft-test/walk/image/1.gif",
+    "attributes": [ 
+         {
+        "display_type": "date", 
+        "trait_type": "Walkday", 
+        "value": 1666990800
+      },
+      {
+        "trait_type": "Time", 
+        "value": "3 hours"
+      }, 
+      {
+        "trait_type": "walkway", 
+        "value": "random direction"
+      }
+]
+}
+
+//https://yvonne213.github.io/2022Fall-Blockchain/nft-test/walk/walk/metadata
