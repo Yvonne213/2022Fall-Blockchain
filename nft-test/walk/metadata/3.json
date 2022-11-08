@@ -1,6 +1,6 @@
 {
-    "name":"walk",
-    "description":"Random walk memory 3",
+    "name":"walk 3",
+    "description":"Random walk memory",
     "image": "https://yvonne213.github.io/2022Fall-Blockchain/nft-test/walk/image/3.gif",
     "attributes": [ 
          {
