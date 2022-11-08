@@ -7,7 +7,15 @@
         "display_type": "date", 
         "trait_type": "Walkday", 
         "value": 1546360800
-      } 
+      } ,
+      {
+        "trait_type": "Time", 
+        "value": "3 hours"
+      }, 
+      {
+        "trait_type": "walkway", 
+        "value": "random direction"
+      }
 ]
 
 
