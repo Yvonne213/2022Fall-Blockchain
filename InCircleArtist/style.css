@@ -3,6 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+canvas {
+  display: block;
+  position:absolute;
+    z-index:1;
+}
+
+#container{
+  position:relative;
+}
+
 body {
   text-align: center;
   font-family: Arial;
@@ -13,10 +23,13 @@ body {
   align-items: center;
   gap: 1rem;
   padding: 1em;
+  z-index:5;
+  
 }
 
 button {
   padding: 1em;
+
 }
 
 form{
@@ -25,22 +38,23 @@ form{
   padding: 20px;
   width: 800px;
   height: 800px;
+  z-index:3;
 }
 
 
 input{
   
   font-size: 2.5rem;
-
   border-radius: 1000px;
-
   border: 1px dashed rgb(255, 0, 0);
   padding: 20px 60px;
   margin: 00px 0;
   width: 395px;
   height: 395px;
+  z-index:2;
 }
 
 input:focus {
   border: 0.2px solid rgb(240, 240, 240);
 }
+
