@@ -6,6 +6,8 @@
 canvas {
   display: block;
   position:absolute;
+  left: 0px;
+  top: 0px;
     z-index:1;
 }
 
@@ -28,7 +30,7 @@ body {
 }
 
 button {
-  padding: 1em;
+  padding: .5em;
 
 }
 
