@@ -12,9 +12,7 @@ if(CONNECT_AUTOMATICALLY) {
 async function main() {
 
   // INITIALIZAING STEPS (SKIP TO THE BOTTOM TO WRITE YOUR OWN CODE)
-
   loadingIconConnect.style.display = "block";
-
   // Check website compatibility
   if(navigator.userAgent.indexOf("Safari") != -1
   && navigator.userAgent.indexOf("Chrome") == -1) {
@@ -31,7 +29,6 @@ async function main() {
     return;
   }
   console.log("MetaMask is installed");
-
 
   // (REQUIRED) Connect to a Web3 provider (MetaMask in most cases)
   const provider = new ethers.providers.Web3Provider(window.ethereum, "any");
@@ -97,6 +94,8 @@ const contractWithSigner = contract.connect(signer);
   // hide the loading icon
   loadingIconConnect.style.display = "none";
 
+}
+
 
   //contract things begin here.........................
 
@@ -120,6 +119,7 @@ $('#setArtistButton').click(function(){
 setInterval(function(){
   getUserInfo();
 }, 2000)
+
 
 // FUNCTIONS
 
@@ -194,8 +194,6 @@ function setInfo() {
   }
 
 }
-
-
 //---------p5js---------------//
 
 // GLOBAL VARIABLES
@@ -259,4 +257,6 @@ text('ARTIST', x, y);
     noiseMax=2
   }
 }
-}
+
+
+
