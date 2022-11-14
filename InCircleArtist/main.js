@@ -94,6 +94,7 @@ const contractWithSigner = contract.connect(signer);
   // hide the loading icon
   loadingIconConnect.style.display = "none";
 
+  
 }
 
 
@@ -174,8 +175,6 @@ async function getUserInfo() {
 
   //---------------P5.JS----------------------------------//
   // pretend this is where setup() starts
-  // let c = createCanvas(windowWidth, windowHeight);
-  // c.parent("container")
 }
 
 
@@ -210,7 +209,7 @@ setTimeout(function(){
 
 
 function setup() {
-  let c = createCanvas(windowWidth, windowHeight);
+  let c = createCanvas(880, 880);
   c.parent("container")
 }
 
