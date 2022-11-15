@@ -58,7 +58,6 @@ async function main() {
   if(chainId.chainId != 5) {
     alert("Please switch to the Goerli Test Network in MetaMask. The page will refresh automatically after switching.");
     loadingIconConnect.style.display = "none";
-    textInputButton.setAttribute("disabled", "true");
     return;
   }
   console.log("Connected to Goerli");
@@ -69,7 +68,6 @@ async function main() {
   connectionStatus.textContent = "🟢 Connected";
 
   connectButton.setAttribute("disabled", "true");
-  textInputButton.removeAttribute("disabled");
 //...............up is connection issues......................................//
 
 // MetaMask is our 'provider' in this case
@@ -94,29 +92,14 @@ const contractWithSigner = contract.connect(signer);
   // hide the loading icon
   loadingIconConnect.style.display = "none";
 
-  
-}
 
 
-  //contract things begin here.........................
-
-async function init() {
-  await provider.send("eth_requestAccounts", []);
-}
-
-init();
-
-// EVENT LISTENERS
-
-// when I click on the setNum button...
-$('#setArtistButton').click(function(){
-  setInfo();
-})
+  // when I click on the setNum button...
+// $('#setArtistButton').click(function(){
+//   setInfo();
+// })
 
 
-// checks the blockchain for the current number every 2 seconds
-// so that the page can be updated automatically if the number
-// is changed.
 setInterval(function(){
   getUserInfo();
 }, 2000)
@@ -193,69 +176,9 @@ function setInfo() {
   }
 
 }
-//---------p5js---------------//
 
-// GLOBAL VARIABLES
-let noiseMax=2
-let zoff = 0 
-var xoff1=0
-var xoff2=10000
-
-// this delays the draw loop from starting on page load
-let started = false;
-setTimeout(function(){
-  started = true;
-}, 1000);
-
-
-function setup() {
-  let c = createCanvas(880, 880);
-  c.parent("container")
+  
 }
 
-
-// this is basically the regular p5.js draw() function
-//add " async " //
-async function draw() {
-  background(255);
-
-    push();
-  translate(width/2, height/2)
-  stroke("red")
-  strokeWeight(4)
-  noFill()
-  beginShape()
-  for (let a=0;a < TWO_PI; a+=0.01){
-    let xoff = map(cos(a), -1,1,0,noiseMax)
-    let yoff = map(sin(a), -1,1,0,noiseMax)
-    let r = map(noise(xoff,yoff,zoff),0,1,350,450)
-    let x = r*cos(a)
-    let y = r*sin(a)
-    vertex(x,y)
-  }
-  endShape(CLOSE)
-  zoff+= 0.01
-   pop();
-
-   push();
-  var x= map(noise(xoff1), 0, 1,0, width);
-  var y= map(noise(xoff2), 0, 1, 0, height);
-
-  xoff1 +=0.005
-  xoff2 +=0.005
-  fill("red")
-  strokeWeight(3)
-  stroke("#F8968F")
-textSize(20);
-text('ARTIST', x, y);
-
-  pop();
-  if (mouseIsPressed === true) {
-   noiseMax =10
-  } else {
-    noiseMax=2
-  }
-}
-
-
+// EVENT LISTENERS
 

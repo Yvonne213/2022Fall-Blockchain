@@ -6,21 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.ethers.io/lib/ethers-5.6.umd.min.js" type="application/javascript"></script>
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> -->
 
   <script src="abi.js" defer></script>
   <script src="main.js" defer></script>
+  <!-- <script src="sketch.js" defer></script> -->
   <link rel="stylesheet" href="style.css">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="utf-8" />
 
- 
 
-  <title>Yvonne's Dapp</title>
+
+  <title>In Circle Artist</title>
   <style>
     .a {
       margin-top: -20px;
@@ -46,16 +46,18 @@
 </head>
 
 <body>
-  
+
   <h1>Everyone can be an in-circle Artist</h1>
 
 
-<!---------connection status----------->
-<div class="button-container">
-  
-    <strong><small>Connection Status:</strong> <span id="connectionStatus">🔴 Not connected</small></span> <small> / </small>
-    <strong><small>Connected Wallet:</strong> <span id="connectedWallet">[No wallet connected]</small></span> <small>👉</small>
-  
+  <!---------connection status----------->
+  <div class="button-container">
+
+    <strong><small>Connection Status:</strong> <span id="connectionStatus">🔴 Not connected</small></span> <small> /
+    </small>
+    <strong><small>Connected Wallet:</strong> <span id="connectedWallet">[No wallet connected]</small></span>
+    <small>👉</small>
+
     <button id="connectButton">Connect</button>
     <span id="loadingIconConnect" class="loading-icon"></span>
   </div>
@@ -86,21 +88,19 @@
 
   <div style="width: 800px;">
     <div class="font" style="margin: 30px;">Current Artist in Circle:
-  </div>
-  
-  <div style="margin-bottom:20px">
-  <a href="https://goerli.etherscan.io/address/0xef34b0d6f13a01faf1c681e92f98b1511f9e2bd1">view contract</a>
-</div>
-
-  <div id="currentArtist">
-  </div>
-
-<!--p5js canvas layer-->
- 
-    <div id="container">
     </div>
 
-  <script src="sketch.js"></script>
+    <div style="margin-bottom:20px">
+      <a href="https://goerli.etherscan.io/address/0xef34b0d6f13a01faf1c681e92f98b1511f9e2bd1">view contract</a>
+    </div>
+
+    <div id="currentArtist">
+    </div>
+
+    <!--p5js canvas layer-->
+
+    <div id="container">
+    </div>
 
 
 
