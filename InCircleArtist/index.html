@@ -11,7 +11,7 @@
 
   <script src="abi.js" defer></script>
   <script src="main.js" defer></script>
-  <!-- <script src="sketch.js" defer></script> -->
+  <script src="sketch.js" defer></script>
   <link rel="stylesheet" href="style.css">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
@@ -22,7 +22,7 @@
 
   <title>In Circle Artist</title>
   <style>
-    .a {
+    .twocircles {
       margin-top: -20px;
     }
 
@@ -34,7 +34,7 @@
       font-size: 1em;
     }
 
-    .font {
+    .prompt {
       font-size: 1.3em;
     }
 
@@ -47,13 +47,12 @@
 
 <body>
 
-  <h1>Everyone can be an in-circle Artist</h1>
-
+ 
 
   <!---------connection status----------->
-  <div class="button-container">
+  <div class="button-container" style="margin-top: 0px;">
 
-    <strong><small>Connection Status:</strong> <span id="connectionStatus">🔴 Not connected</small></span> <small> /
+    <strong><small>Connection Status:</strong> <span id="connectionStatus">🔴 Not connected</small></span> <small> 
     </small>
     <strong><small>Connected Wallet:</strong> <span id="connectedWallet">[No wallet connected]</small></span>
     <small>👉</small>
@@ -62,19 +61,33 @@
     <span id="loadingIconConnect" class="loading-icon"></span>
   </div>
 
-
+  <h1 style=" margin-top: 50px;">Everyone can be an in-circle Artist</h1>
 
 
   <!-- This input element is the text box where users
   enter the number they want to set -->
+<!--prompt-->
+  <div class="prompt" style="margin-top: 2em;color:rgb(174, 0, 0)">
+    <p>Enter Your Name and Address : </p>
+  <p style="font-size:0.6em;color:rgb(255, 166, 0)">*Top circle [Name]; Bottom circle [Wallet Address] </p>
+</div>
 
-  <div class="font" style="margin-top: 1em;color:rgb(174, 0, 0)">
-    <label for="numInput">Enter Your Name and Address : </label>
+<!--....................................-->
+<!--posiontioning!!!!!-->
+
+   <!--p5js canvas layer-->
+   <div id="container">
   </div>
-  <label for="numInput">*Top circle [Name]; Bottom circle [Wallet Address] </label>
 
+<div id="layercontainer">
+<!--circle-->
+<div id="bigcircle">
   <form style="margin:2em">
-    <div class="a">
+    <!--twocircle-->
+  </form>
+</div>
+<div id ="two">
+    <div class="twocircles">
       <div>
         <input type="text" name="setArtistInput" id="setArtistInput">
       </div>
@@ -82,25 +95,26 @@
         <input type="text" name="setAddressInput" id="setAddressInput">
       </div>
     </div>
-  </form>
-
+  
+<!--....................................-->
+<br>
+  <!--button-->
   <button id="setArtistButton">Click and Enter Artists' Circle</button>
+    <!--form parts-->
+    <div id="form" style="width: 800px;">
+      <p style="margin: 30px; font-size:1.2em">Current Artist in Circle
+      </p>
+      <p style="margin-bottom:20px">
+        <a href="https://goerli.etherscan.io/address/0xef34b0d6f13a01faf1c681e92f98b1511f9e2bd1">view contract</a>
+      </p>
+      <div id="currentArtist">
+      </div>
+  </div>
+</div>
 
-  <div style="width: 800px;">
-    <div class="font" style="margin: 30px;">Current Artist in Circle:
-    </div>
 
-    <div style="margin-bottom:20px">
-      <a href="https://goerli.etherscan.io/address/0xef34b0d6f13a01faf1c681e92f98b1511f9e2bd1">view contract</a>
-    </div>
+</div>
 
-    <div id="currentArtist">
-    </div>
-
-    <!--p5js canvas layer-->
-
-    <div id="container">
-    </div>
 
 
 
