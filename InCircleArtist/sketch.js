@@ -27,7 +27,7 @@ function draw() {
   for (let a=0;a < TWO_PI; a+=0.01){
     let xoff = map(cos(a), -1,1,0,noiseMax)
     let yoff = map(sin(a), -1,1,0,noiseMax)
-    let r = map(noise(xoff,yoff,zoff),0,1,350,450)
+    let r = map(noise(xoff,yoff,zoff),0,1,width/2,width/2.5)
     let x = r*cos(a)
     let y = r*sin(a)
     vertex(x,y)

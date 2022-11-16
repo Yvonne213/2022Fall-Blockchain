@@ -22,17 +22,14 @@
 
   <title>In Circle Artist</title>
   <style>
-    .twocircles {
-      margin-top: -20px;
-    }
-
-    div.b {
+ 
+    /* div.b {
       line-height: 1000%;
-    }
+    } */
 
-    .list {
+    /* .list {
       font-size: 1em;
-    }
+    } */
 
     .prompt {
       font-size: 1.3em;
@@ -50,7 +47,7 @@
  
 
   <!---------connection status----------->
-  <div class="button-container" style="margin-top: 0px;">
+  <div class="button-container">
 
     <strong><small>Connection Status:</strong> <span id="connectionStatus">🔴 Not connected</small></span> <small> 
     </small>
@@ -67,7 +64,7 @@
   <!-- This input element is the text box where users
   enter the number they want to set -->
 <!--prompt-->
-  <div class="prompt" style="margin-top: 2em;color:rgb(174, 0, 0)">
+  <div class="prompt" style="margin-top: 0em;color:rgb(174, 0, 0)">
     <p>Enter Your Name and Address : </p>
   <p style="font-size:0.6em;color:rgb(255, 166, 0)">*Top circle [Name]; Bottom circle [Wallet Address] </p>
 </div>
@@ -76,10 +73,14 @@
 <!--posiontioning!!!!!-->
 
    <!--p5js canvas layer-->
-   <div id="container">
-  </div>
+
 
 <div id="layercontainer">
+
+   <!--p5js canvas layer-->
+  <div id="container">
+  </div>
+
 <!--circle-->
 <div id="bigcircle">
   <form style="margin:2em">
@@ -87,13 +88,12 @@
   </form>
 </div>
 <div id ="two">
-    <div class="twocircles">
       <div>
         <input type="text" name="setArtistInput" id="setArtistInput">
       </div>
       <div>
         <input type="text" name="setAddressInput" id="setAddressInput">
-      </div>
+
     </div>
   
 <!--....................................-->
