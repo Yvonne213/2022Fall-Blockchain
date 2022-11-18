@@ -56,5 +56,7 @@ text('ARTIST', x, y);
   }
 }
 
-
+// function windowResized() {
+//   resizeCanvas(windowWidth, windowHeight);
+// }
 
