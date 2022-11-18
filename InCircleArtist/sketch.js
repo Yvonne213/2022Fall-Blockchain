@@ -91,9 +91,14 @@ function draw() {
     let r = map(noise(xoff,yoff,zoff),0,1,width/2,width/2.5)
     let x = r*cos(a)
     let y = r*sin(a)
-  
     vertex(x,y)
+//     let r2 = map(noise(xoff,yoff,zoff),0,1,width/4,width/5)
+//     let x2 = r2*cos(a)
+//  let y2 = r2*sin(a)
+//   vertex(x2,y2)
+ 
     
+
      let targetPoint= createVector(x,y)
       let angle = atan2(targetPoint.y - chasingPoint.y, targetPoint.x - chasingPoint.x)
       chasingPoint = p5.Vector.lerp(chasingPoint, targetPoint, easing)
@@ -101,7 +106,9 @@ function draw() {
      push();
     translate(chasingPoint.x, chasingPoint.y);
     rotate(angle)
+    
     point(0, 0);
+    // vertex(0, 0);
   pop();
   }
 
