@@ -121,7 +121,7 @@ function draw() {
   xoff1 +=0.005
   xoff2 +=0.005
   fill("red")
-  strokeWeight(4)
+  strokeWeight(1)
   stroke("#F8968F")
 textSize(20);
 text('Artist', x, y);
