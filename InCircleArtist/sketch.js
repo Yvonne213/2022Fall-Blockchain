@@ -111,7 +111,6 @@ function draw() {
     // vertex(0, 0);
   pop();
   }
-
   endShape(CLOSE)
   zoff+= 0.01
    pop();
