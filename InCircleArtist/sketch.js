@@ -115,17 +115,17 @@ function draw() {
   zoff+= 0.01
    pop();
 
-   push();
-  var x= map(noise(xoff1), 0, 1,0, width);
-  var y= map(noise(xoff2), 0, 1, 0, height);
-  xoff1 +=0.005
-  xoff2 +=0.005
-  fill("red")
-  strokeWeight(1)
-  stroke("#F8968F")
-textSize(20);
-text('Artist', x, y);
-  pop();
+//    push();
+//   var x= map(noise(xoff1), 0, 1,0, width);
+//   var y= map(noise(xoff2), 0, 1, 0, height);
+//   xoff1 +=0.005
+//   xoff2 +=0.005
+//   fill("red")
+//   strokeWeight(1)
+//   stroke("#F8968F")
+// textSize(20);
+// text('Artist', x, y);
+//   pop();
   if (mouseIsPressed === true) {
    noiseMax = 15
   } else {
