@@ -30,8 +30,9 @@
 #two {
   /* width: 0%;
   height: 100%; */
-  margin-left: -200px;
-  margin-top: 34px;
+   text-align: center;
+  margin-left: -300px;
+  margin-top: 100px;
   position: absolute;
 }
 
@@ -83,8 +84,9 @@ button {
 } */
 
 
-input{
-  
+/*color two circle*/
+
+/* input{
   font-size: 2.5rem;
   border-radius: 1000px;
   border: 1px dashed rgb(255, 0, 0);
@@ -93,19 +95,35 @@ input{
   width: 398px;
   height: 398px;
   background: transparent;
+
+} */
+
+input[type=text]{
+  text-align: center;
+  font-size: 2.2rem;
+  border-radius: 5200px;
+  border-style: none;
+  /* border: 1px dashed rgb(255, 0, 0); */
+  padding: 20px 10px;
+  margin: 00px 0;
+  width: 600px;
+  height: 330px;
+  background: transparent;
  
 }
 
 input[type=text]:focus {
-  border: 2px solid rgb(254, 197, 189);
+  /* border: 2px solid rgb(254, 197, 189); */
+  /* border-style: hidden; */
+  border-style: none;
  }
 
 
 .loading-icon {
   display: none;
   padding: .5rem;
-  border: .325rem solid gray;
-  border-top: .325rem solid lightblue;
+  border: .325rem solid rgb(128, 128, 128);
+  border-top: .325rem solid rgb(230, 173, 173);
   border-radius: 50%;
   animation: spin 1s infinite linear;
 }
