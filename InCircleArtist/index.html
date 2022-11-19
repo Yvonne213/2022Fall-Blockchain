@@ -22,7 +22,6 @@
 
   <title>In Circle Artist</title>
   <style>
- 
     /* div.b {
       line-height: 1000%;
     } */
@@ -39,22 +38,22 @@
       width: 100%;
       border: 1px solid;
     }
-  
-    ::placeholder {
-  color: rgba(255, 0, 0, 0.144);
 
-}
+    ::placeholder {
+      color: rgba(255, 0, 0, 0.144);
+
+    }
   </style>
 </head>
 
 <body>
 
- 
+
 
   <!---------connection status----------->
   <div class="button-container">
 
-    <strong><small>Connection Status:</strong> <span id="connectionStatus">🔴 Not connected</small></span> <small> 
+    <strong><small>Connection Status:</strong> <span id="connectionStatus">🔴 Not connected</small></span> <small>
     </small>
     <strong><small>Connected Wallet:</strong> <span id="connectedWallet">[No wallet connected]</small></span>
     <small>👉</small>
@@ -67,61 +66,48 @@
 
 
 
-<!--prompt-->
+  <!--prompt-->
   <div class="prompt" style="margin-top: 0em;color:rgb(174, 0, 0)">
     <p>Enter Your Name and Address : </p>
-  <!-- <p style="font-size:0.6em;color:rgb(255, 166, 0)">*Top circle [Name]; Bottom circle [Wallet Address] </p> -->
-</div>
-
-<!--....................................-->
-<!--posiontioning!!!!!-->
-
-
-<div id="layercontainer">
-
-   <!--p5js canvas layer-->
-  <div id="container">
+    <!-- <p style="font-size:0.6em;color:rgb(255, 166, 0)">*Top circle [Name]; Bottom circle [Wallet Address] </p> -->
   </div>
 
-<!--circle-->
-<div id="bigcircle">
-  <form style="margin:2em">
-   
-  </form>
+  <!--....................................-->
+  <!--posiontioning!!!!!-->
 
+
+  <div id="layercontainer">
+    <!--p5js canvas layer-->
+    <div id="motioncircle"></div>
   
-     <!--twocircle-->
-</div>
-
-  <!-- This input element is the text box where users
+    <!-- This input element is the text box where users
   enter the name they want to set -->
-<div id ="two">
+    <div id="two">
       <div>
         <input type="text" name="setArtistInput" id="setArtistInput" placeholder="YOUR NAME...">
       </div>
       <div>
         <input type="text" name="setAddressInput" id="setAddressInput" placeholder="YOUR WALLET ADDRESS...">
-
-    </div>
-  
-<!--....................................-->
-<br>
-  <!--button-->
-  <button id="setArtistButton"  style="margin-top:100px">Click and Enter Artists' Circle</button>
-    <!--form parts-->
-    <div id="form" style="width: 800px;">
-      <p style="margin: 30px; margin-left:230px; font-size:1.2em">Current Artists in Circle
-      </p>
-      <p style="margin-bottom:20px;margin-left:200px;">
-        <a href="https://goerli.etherscan.io/address/0xef34b0d6f13a01faf1c681e92f98b1511f9e2bd1">view contract</a>
-      </p>
-      <div id="currentArtist" >
       </div>
+
+      <!--....................................-->
+      <br>
+      <!--button-->
+      <button id="setArtistButton" style="margin-top:100px">Click and Enter Artists' Circle</button>
+      <!--form parts-->
+      <div id="form" style="width: 800px;">
+        <p style="margin: 30px; font-size:1.2em">Current Artists in Circle
+        </p>
+        <p style="margin-bottom:20px;margin-left:200px;">
+          <a href="https://goerli.etherscan.io/address/0xef34b0d6f13a01faf1c681e92f98b1511f9e2bd1">view contract</a>
+        </p>
+        <div id="currentArtist">
+        </div>
+      </div>
+    </div>
+
+
   </div>
-</div>
-
-
-</div>
 
 
 
