@@ -122,9 +122,9 @@ input[type=text]:focus {
  textarea:focus, input:focus {
   outline: none;
  }
- *.focus(
+ *.focus{
   outline:none;
- )
+ }
 
 .loading-icon {
   display: none;
