@@ -119,6 +119,12 @@ input[type=text]:focus {
   border-style: none;
  }
 
+ textarea:focus, input:focus {
+  outline: none;
+ }
+ *.focus(
+  outline:none;
+ )
 
 .loading-icon {
   display: none;
