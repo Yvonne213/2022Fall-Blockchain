@@ -36,7 +36,7 @@ function draw() {
   background(255);
   push();
   translate(width / 2, height / 2)
-  stroke(255, 0, 0, 20)
+  stroke(255, 0, 0, 40)
   strokeWeight(4)
   noFill()
   beginShape()
@@ -67,7 +67,7 @@ function draw() {
   endShape(CLOSE)
 
  push();
- stroke(255, 0, 0, 80)
+ stroke(255, 0, 0, 100)
  strokeWeight(4)
     beginShape()
     for (let a=0;a < TWO_PI; a+=0.01){
@@ -125,11 +125,11 @@ pop();
 textAlign(CENTER, CENTER);
 push();
 textSize(45);
-text('The person who has names', width/2, height/2.5+50);
-text('and surnames is an artist.', width/2, height/2.1+50);
+text('The person who has names', width/2, height/2.5+40);
+text('and surnames is an artist.', width/2, height/2.1+40);
 textSize(20);
 textStyle(ITALIC);
-text('--Artist Manifesto', width/2, height/1.8+50);
+text('--Artist Manifesto', width/2, height/1.8+40);
 fill(0, 0, 0);
 pop();
   
