@@ -16,9 +16,6 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <meta charset="utf-8" />
-
-
 
   <title>In Circle Artist</title>
   <style>
@@ -41,9 +38,11 @@
 
   <!---------connection status----------->
   <div class="button-container">
-    <strong><small>Connection Status:</strong> <span id="connectionStatus">🔴 Not connected</small></span> <small>
-    </small>
-    <strong><small>Connected Wallet:</strong> <span id="connectedWallet">[No wallet connected]</small></span>
+    <strong><small>Connection Status:</small></strong>
+    <span id="connectionStatus">🔴 Not connected</span> 
+    
+    <strong><small>Connected Wallet:</small></strong>
+    <span id="connectedWallet">[No wallet connected]</span>
     <small>👉</small>
 
     <button id="connectButton">Connect</button>
@@ -64,7 +63,7 @@
   <!--posiontioning!!!!!-->
 
 
-  <div id="layercontainer" style="width: 880px;">
+  <div id="layerContainer">
     <!--p5js canvas layer-->
     <div id="motioncircle"></div>
 
