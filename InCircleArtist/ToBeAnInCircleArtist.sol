@@ -2,7 +2,6 @@
 pragma solidity ^0.8.17;
 
 contract ToBeAnInCircleArtist {
-
     address public user;
     string public realname;
     // string public addr;
