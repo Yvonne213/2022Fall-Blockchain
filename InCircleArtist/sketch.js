@@ -72,7 +72,7 @@ let easing = 0.05;
 
 
 function setup() {
-  let c = createCanvas(880, 880);
+  let c = createCanvas(880,880);
   c.parent("motioncircle")
   chasingPoint = createVector(0, 0);
 }
