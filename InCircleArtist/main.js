@@ -172,9 +172,8 @@ async function main() {
     if (addressToSet.length == 0) {
       alert("Please enter an address")
     } else {
-      contractWithSigner.nameInput(addressToSet, nameToSet);
+      contractWithSigner.safeMint(addressToSet, nameToSet);
     }
-
   }
 
 
