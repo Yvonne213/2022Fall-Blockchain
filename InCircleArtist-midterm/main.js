@@ -82,6 +82,8 @@ async function getUserInfo() {
   console.log(nameAndAddressArray)
   //document.getElementById("currentArtist").innerHTML = "<tr>"+"jjsjsjs"+"</tr>"
   // $('#currentAddress').text(currentAddress)
+
+ 
 }
 
 
